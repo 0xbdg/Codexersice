@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import {ref} from 'vue'
-import Nav from '@/components/Navbar.vue'
+import Navbar from '@/components/Navbar.vue'
+import Footer from '@/components/Footer.vue'
 
-let msg: string = ref(1+1);
+let msg = ref(1+1);
 </script>
 
 <template>
-  <Nav />
+  <Navbar />
   <h1>You did it!</h1>
-  <p>
+  <p class="text-red-200">
     Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> {{ msg }}
   </p>
+  <Footer />
 </template>
 
 <style scoped></style>
